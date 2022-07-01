@@ -73,7 +73,7 @@ public class BookWarehouseService {
         } catch (NotEnoughItems e) {
             System.out.println(book_warehouse.getBooks_amount());
             System.out.println(e);
-            
+
         } catch (RollbackException e) {
             System.out.println("ГРУСТЬ, ПЕЧАЛЬ=" + book_warehouse);
             e.printStackTrace();
