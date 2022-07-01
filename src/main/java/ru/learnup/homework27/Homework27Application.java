@@ -24,12 +24,7 @@ public class Homework27Application {
         pool.submit(new Runnable() {
             @Override
             public void run() {
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                service1.transactionBuyABook(2);
+                service2.transactionBuyABook(2);
             }
         });
 
@@ -39,6 +34,18 @@ public class Homework27Application {
                 service1.transactionBuyABook(2);
             }
         });
+
+//        pool.submit(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    Thread.sleep(1000);
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//                service1.transactionBuyABook(2);
+//            }
+//        });
 
 
 
